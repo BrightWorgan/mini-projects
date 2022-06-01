@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sli_GO</title>
   <link href="styles.css" rel="stylesheet" type="text/css" />
-  <script></script>
+  <script src="sligo1.js" type="text/javascript"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 </head>
 
-<body>
+<body onload="startJava()">
   <!-- Header area with Title etc.-->
   <div id="header_area">
     <h1> Welcome to Sli-GO </h1>
@@ -29,7 +29,7 @@
       <div id="responsive-nav-items">
         <ul>
           <li class="active">
-            <a href=""><i class="fa fa-fw fa-home"></i>Home</a>
+            <a href=""><i class=""></i>Home</a>
           </li>
           <li>
             <a href=""><i class=""></i></a>
@@ -51,11 +51,21 @@
 
   <!-- Main Area -->
   <div id="main_content_area">
-
+    <button onclick="countyAlert()">County</button>
+    <button onclick="cityAlert()">City</button>
+    <button onclick="beachAlert()">Beaches</button>
   </div>
+
+
   <!-- Images -->
   <div id="image_area">
+    <img src="images/" alt="Sligo City Tourism Map ">
+  </div>
 
+
+  <!-- Banner Images -->
+  <div id="banner_image_area">
+    <img src="images/Simple Details Monochrome Hello! Let's Connect LinkedIn Banner(3).png" alt="banner of five smaller images of beaches and sligo abbey ">
   </div>
   <!-- Footer Area with links/presentaion-->
   <footer>

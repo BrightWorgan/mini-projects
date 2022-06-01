@@ -1,0 +1,169 @@
+/*Main Body CSS*/
+
+body {
+  background-color: #B8FFF9;
+  padding: 0px;
+  margin: 0px;
+  font-family: Garamond, sans-serif;
+}
+
+
+/*Top image banner with logo*/
+
+.banner-img {
+  width: 100%;
+  max-height: 300px;
+  vertical-align: top;
+}
+
+
+/*Nav Bar styling*/
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #85F4FF;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav i {
+  margin: 5px;
+}
+
+*/
+/* hover colour for link */
+
+nav li a:hover {
+  background-color: #C7E78B;
+}
+
+nav .active {
+  background-color: #42C2FF;
+}
+
+nav>.active {
+  float: none;
+  display: inline-block;
+}
+
+nav>a:hover {
+  opacity: 0.5;
+}
+
+nav {
+  width: 100%;
+  background-color: #85F4FF;
+  color: white;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+*/ a:link,
+a:visited,
+a:active,
+a:hover {
+  color: white;
+}
+
+
+/* Hamburge Menu */
+
+
+/* Desktop and Tablet Screen Size */
+
+#responsive-nav {
+  width: 100%;
+  background: #42C2FF;
+}
+
+#responsive-nav-items a:hover {
+  background-color: #85F4FF;
+}
+
+#responsive-nav label,
+#hamburger {
+  display: none;
+}
+
+
+/* Mobile Screen Size ( 768px was given by Keith/CA1 Brief)*/
+
+@media screen and (max-width: 768px) {
+  #responsive-nav-items li {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid white;
+  }
+  /* */
+  #responsive-nav label {
+    display: inline-block;
+    color: white;
+    background: #42C2FF;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  /* Toggle */
+  #responsive-nav-items {
+    display: none;
+  }
+  #responsive-nav input:checked~#responsive-nav-items {
+    display: block;
+  }
+}
+
+
+/*end of nav styling!*/
+
+.opening-text {
+  text-align: justify;
+}
+
+.heading-text {
+  text-align: center;
+}
+
+
+/* h1 */
+
+h1 {
+  font-size: 30px;
+}
+
+
+/* h2 */
+
+h2 {
+  font-size: 20px;
+}
+
+
+/* paragraph tag*/
+
+p {
+  color: black;
+  font-size: large;
+}
+
+#image_area {
+  width: 50%;
+}
+
+footer p {
+  margin: 0px;
+  background-color: #42C2FF;
+}

@@ -11,19 +11,21 @@
 
 
 #  list of fib sequence
-fibList = [0,0,1,1,2,3,5,8,13]
+fibList = [0,0,1]
 
 
 # fib logic function
 def fibo():
     #  get user input
-    userIndex = input("\tWhat index do you want to view?")
+    userIndex = int(input("\tWhat index do you want to view?"))
 
     
     if userIndex == 0 or userIndex == 1:
         print("\tThe number at that position is 0")
     else:
-        while userIndex > len(fibList):
+        while userIndex > len(fibList)-2:
             newVal = fibList[-1]+ fibList[-2]
             fibList.append(newVal)
-        print("\tThe number at %d position is %d" % userIndex, fibList[-1])
+        print("\tThe number at %d position is %d" % (userIndex, fibList[-1]))
+
+fibo()

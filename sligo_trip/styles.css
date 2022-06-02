@@ -1,7 +1,7 @@
 /*Main Body CSS*/
 
 body {
-  background-color: #B8FFF9;
+  background-color: white;
   padding: 0px;
   margin: 0px;
   font-family: Garamond, sans-serif;
@@ -161,6 +161,20 @@ p {
 
 #image_area {
   width: 50%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 footer p {

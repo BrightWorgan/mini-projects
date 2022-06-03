@@ -1,7 +1,7 @@
 /*Main Body CSS*/
 
 body {
-  background-color: white;
+  background-color: #EFFFFD;
   padding: 0px;
   margin: 0px;
   font-family: Garamond, sans-serif;
@@ -99,9 +99,9 @@ a:hover {
 }
 
 
-/* Mobile Screen Size ( 768px was given by Keith/CA1 Brief)*/
+/* Mobile Screen Size ( 600px --> )*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   #responsive-nav-items li {
     box-sizing: border-box;
     display: block;
@@ -123,6 +123,10 @@ a:hover {
   }
   #responsive-nav input:checked~#responsive-nav-items {
     display: block;
+  }
+  /* makes the columns responsive*/
+  .column {
+    width: 100%;
   }
 }
 
@@ -165,7 +169,7 @@ p {
 
 .column {
   float: left;
-  width: 33.33%;
+  width: 50%;
 }
 
 

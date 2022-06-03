@@ -11,40 +11,41 @@
 </head>
 
 <body onload="startJava()">
-  <!-- Header area with Title etc.-->
-  <div id="banner_area">
-    <img src="images/13.png" alt="Sligo Logo Banner Image">
-
-
-    <!-- Nav BAR -->
-    <nav id="responsive-nav">
-
-      <!-- Hamburger Menu -->
-      <label for="hamburger">&#9776;</label>
-      <input type="checkbox" id="hamburger" />
-
-      <!-- Menu Links to Sections -->
-      <div id="responsive-nav-items">
-        <ul>
-          <li class="active">
-            <a href=""><i class=""></i>Home</a>
-          </li>
-          <li>
-            <a href=""><i class=""></i></a>
-          </li>
-          <li>
-            <a href=""><i class=""></i></a>
-          </li>
-          <li>
-            <a href=""><i class=""></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa fa-book"></i></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <!-- "Hero" area with Title etc.-->
+  <div class="hero-image">
+    <img src="images/13.png" alt="Sligo Logo Banner Image" class="responsive">
   </div>
+
+  <!-- Nav BAR -->
+  <nav id="responsive-nav">
+
+    <!-- Hamburger Menu -->
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger" />
+
+    <!-- Menu Links to Sections -->
+    <div id="responsive-nav-items">
+      <ul>
+        <li class="active">
+          <a href=""><i class=""></i>Home</a>
+        </li>
+        <li>
+          <a name="beaches"><i class=""></i>Beaches</a>
+        </li>
+        <li>
+          <a href=""><i class=""></i></a>
+        </li>
+        <li>
+          <a href=""><i class=""></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa fa-book"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
   <!-- Header area with Title etc.-->
   <div id="header_area">
     <h1> Welcome to Sli-GO </h1>
@@ -57,11 +58,9 @@
 
     <!-- Main Area -->
     <div id="main_content_area">
-      <button onclick="countyAlert()">County</button>
-      <button onclick="cityAlert()">City</button>
-      <button onclick="beachAlert()">Beaches</button>
+
       <div class="row">
-        <div class="column">
+        <div class="column1">
           <button onclick="beachAlert()">Beaches</button>
           <button onclick="beachAlert()">Beaches</button>
           <button onclick="beachAlert()">Beaches</button>
@@ -75,15 +74,18 @@
           <button onclick="beachAlert()">Beaches</button>
           <button onclick="beachAlert()">Beaches</button>
         </div>
-        <div class="column">
+        <div class="column2">
           <img src="images/sigo_map_resized_750px.jpg" alt="Sligo City Tourism Map ">
         </div>
       </div>
     </div>
 
+    <!--  -->
+    <h4 class="beaches">Beaches </h4>
+
     <!-- Banner Images -->
     <div id="banner_image_area">
-      <img src="images/14.png" alt="banner of five smaller images of beaches and sligo abbey ">
+      <img src="images/14.png" alt="banner of five smaller images of beaches and sligo abbey" class="responsive">
     </div>
     <!-- Footer Area with links/presentaion-->
     <footer>

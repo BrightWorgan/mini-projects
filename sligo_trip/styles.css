@@ -1,7 +1,17 @@
 /*Main Body CSS*/
 
+
+/*
+Colour Palette
+
+E9EFC0
+B4E197
+83BD75
+4E944F
+*/
+
 body {
-  background-color: #EFFFFD;
+  background-color: white;
   padding: 0px;
   margin: 0px;
   font-family: Garamond, sans-serif;
@@ -16,6 +26,11 @@ body {
   vertical-align: top;
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 
 /*Nav Bar styling*/
 
@@ -24,7 +39,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #85F4FF;
+  background-color: #B4E197;
 }
 
 nav li {
@@ -51,7 +66,7 @@ nav li a:hover {
 }
 
 nav .active {
-  background-color: #42C2FF;
+  background-color: #E9EFC0;
 }
 
 nav>.active {
@@ -86,11 +101,11 @@ a:hover {
 
 #responsive-nav {
   width: 100%;
-  background: #42C2FF;
+  background: #4E944F;
 }
 
 #responsive-nav-items a:hover {
-  background-color: #85F4FF;
+  background-color: #E9EFC0;
 }
 
 #responsive-nav label,
@@ -167,9 +182,14 @@ p {
   width: 50%;
 }
 
-.column {
+.column1 {
+  float: right;
+  width: 20%;
+}
+
+.column1 {
   float: left;
-  width: 50%;
+  width: 60%;
 }
 
 
@@ -181,7 +201,16 @@ p {
   clear: both;
 }
 
+.banner_image_area {
+  width: 100%;
+}
+
+button {
+  width: 50%;
+  cursor: pointer;
+}
+
 footer p {
   margin: 0px;
-  background-color: #42C2FF;
+  background-color: #4E944F;
 }

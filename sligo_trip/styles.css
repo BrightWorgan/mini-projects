@@ -201,14 +201,23 @@ p {
   clear: both;
 }
 
+
+/* Header/hero image */
+
 .banner_image_area {
   width: 100%;
 }
+
+
+/* Button Styling */
 
 button {
   width: auto;
   cursor: pointer;
 }
+
+
+/* Footer styling */
 
 footer p {
   margin: 0px;

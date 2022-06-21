@@ -17,12 +17,20 @@ class Solution:
                 alexander += 500
             if i == "M":
                 alexander += 1000
-                # I before V and X
-                # X before L and C
-                # C before D and M
-                # if alexander == "IV""IX""XL""XC""CD""CM"
-                if re.match(" +", alexander ):
-                    return int(alexander)-1
+                
+                # if alexander contains "IV""IX""XL""XC""CD""CM"
+                if re.sub("IV", "4", alexander):
+                    return int(alexander)
+                if re.sub("IX", "9", alexander):
+                    return int(alexander)
+                if re.sub("XL", "40", alexander):
+                    return int(alexander)
+                if re.sub("XC", "90", alexander):
+                    return int(alexander)
+                if re.sub("CD", "400", alexander):
+                    return int(alexander)
+                if re.sub("CM", "900", alexander):
+                    return int(alexander)
         return alexander
         
     romanToInt("III")

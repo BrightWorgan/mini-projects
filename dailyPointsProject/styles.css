@@ -9,7 +9,7 @@ D3CEDF purple
 /* main body */
 
 body {
-  background-color: #D3CEDF;
+  background-color: #9CB4CC;
   padding: 0px;
   margin: 0px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -24,6 +24,29 @@ body {
 
 .column {
   flex: 50%;
+}
+
+
+/* */
+
+.button {
+  background-color: #748DA6;
+  /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+  display: block;
+}
+
+.button:hover {
+  background-color: #4CAF50;
+  /* Green */
+  color: white;
 }
 
 

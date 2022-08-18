@@ -23,9 +23,17 @@
 //  .style('color', 'blue')
 
 const data = [10, 20, 30, 40, 50]
-const el = d3.selectA('ul')
+const el = d3.select('ul')
   .selectAll('li')
   .data(data)
-  .join('li')
-  .text('hello')
+  .join(
+    enter => {
+      return enter.append('li')
+        .style('color', 'purple')
+    },
+    update => update.style('color', 'green'),
+    exit => exit.remove()
+  )
+  .text(d => d)
+  // => is an arrow function
 consoile.log(el)

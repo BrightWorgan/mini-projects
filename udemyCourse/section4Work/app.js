@@ -27,9 +27,15 @@ async function draw() {
       `translate(${dimensions.margin.left}, ${dimensions.margin.top})`
     )
 
+  // Commented out first test circle
+  //ctr.append('circle')
+  // .attr('r', 15)
 
-  ctr.append('circle')
-    .attr('r', 15)
+  // draw circles
+  ctr.selectAll('circle')
+    .data(dataset)
+    .join('circle')
+    .attr('cx', () => )
 }
 
 

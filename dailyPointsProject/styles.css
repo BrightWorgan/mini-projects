@@ -15,7 +15,7 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#hero-image {
+.hero-image {
   width: 100%;
 }
 
@@ -45,6 +45,14 @@ body {
   cursor: pointer;
   width: 150px;
   display: block;
+}
+
+
+/*Paw button*/
+
+.conButton {
+  width: 10%;
+  height: 10%;
 }
 
 .button:hover {

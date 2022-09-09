@@ -64,10 +64,11 @@ if userInput == tenExercise:
 
   <!-- Header area with Title etc.-->
   <div id="header_area">
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h6>Heading 6</h6>
-    <p> Paragraph 1</p>
+    <h1>Welcome to HabPet</h1>
+    <h2>The only game that helps builds wanted habbits</h2>
+    <p>Are you a fox that forgets to eat or needs more movtivation to exercise?</p>
+    <p> The search no more!</p>
+    <p>Start using HabPet today.</p>
   </div>
 
 
@@ -75,64 +76,58 @@ if userInput == tenExercise:
   <div id="">
     <img src="" alt="">
   </div>
+
+  <!-- Main Button Area -->
   <div id="button_area">
 
     <div class="row">
 
       <div class="column">
-        <h3>TEST</h3>
-        <button class="button button4" onclick="tenMinuteEx()"><i class="fa fa-bicycle" aria-hidden="true"></i>
-          10 Minutes of Exercise</button>
-        <button class="button button4" onclick="fifteenMinuteEx()"><i class="fa fa-bicycle" aria-hidden="true"></i>15 Minutes of Exercise</button>
-        <button class="button button4" onclick="twentyMinuteEx()"><i class="fa fa-bicycle" aria-hidden="true"></i> 20 Minutes of Exercise</button>
-        <button class="button button4" onclick="thirtyMinuteEx()"><i class="fa fa-bicycle" aria-hidden="true"></i> 30 Minutes of Exercise</button>
-        <button class="button button4" onclick="s()"><i class="fa fa-book" aria-hidden="true"></i> 10 Minutes of Mindfulness or Meditation</button>
-        <button class="button button4" onclick="s()">1 Duolingo Lesson <i class="fa fa-language" aria-hidden="true"></i>
-        </button>
-      </div>
-
-
-      <div class="column">
-        <h3> TEST</h3>
-
-        <button class="button button4" onclick="s()">3 Duolingo Lessons <i class="fa fa-language" aria-hidden="true"></i>
-        </button>
-        <button class="button button4" onclick="s()"><i class="fa fa-book" aria-hidden="true"></i> 10 Minutes playing with Dog</button>
-        <button class="button button4" onclick="s()">10 Minutes of a non-digital Hobby <i class="fa fa-paint-brush" aria-hidden="true"></i>
-        </button>
-        <button class="button button4" onclick="s()"><i class="fa fa-book" aria-hidden="true"></i> 20 Minutes of Reading</button>
-        <button class="button button4" onclick="s()"><i class="fa fa-book" aria-hidden="true"></i> 1 Household Chore (Laundry, Dishes etc)</button>
-        <button class="button button4" onclick="s()"><i class="fa fa-book" aria-hidden="true"></i> 10 Minutes of Mindfulness or Meditation</button>
-
+        <h3>Daily Short Activities</h3>
+        <button class="button button4" onclick="onePtBtn()"><i class="fa fa-book" aria-hidden="true"></i> Daily Vitamin/Supplement Taken</button>
+        <button class="button button4" onclick="onePtBtn()"><i class="fa fa-tint" aria-hidden="true"></i> 500ml of Water Drank</button>
+        <button class="button button4" onclick="twoPtBtn()"><i class="fa fa-tint" aria-hidden="true"></i> 1L of Water Drank</button>
+        <button class="button button4" onclick="onePtBtn()"><i class="fa fa-cutlery" aria-hidden="true"></i> Eat a snack</button>
+        <button class="button button4" onclick="twoPtBtn()"><i class="fa fa-cutlery" aria-hidden="true"></i> Eat a meal</button>
+        <button class="button button4" onclick="onePtBtn()"><i class="fa fa-language" aria-hidden="true"></i> 1 Duolingo Lesson </button>
+        <button class="button button4" onclick="onePtBtn()"><i class="fa fa-comments-o" aria-hidden="true"></i> Send a message to a friend</button>
 
       </div>
 
 
       <div class="column">
-        <h3> TEST</h3>
-        <button class="button button4" onclick="onehrEx()"><i class="fa fa-bicycle" aria-hidden="true"></i> 1 Hour of Exercise</button>
-        <button class="button button4" onclick="s()"><i class="fa fa-tint" aria-hidden="true"></i>
-          500ml of Water Drank</button>
-        <button class="button button4" onclick="s()"><i class="fa fa-book" aria-hidden="true"></i> 1L of Water Drank</button>
-        <button class="button button4" onclick="s()"><i class="fa fa-book" aria-hidden="true"></i> Daily Vitamin/Supplement Taken</button>
-        <button class="button button4" onclick="s()"><i class="fa fa-book" aria-hidden="true"></i> 10 Minutes playing with Dog</button>
-        <button class="button button4" onclick="s()"><i class="fa fa-book" aria-hidden="true"></i> 10 Minutes of a non-digital Hobby</button>
-        <button class="button button4" onclick="s()"> 20 Minutes <i class="fa fa-book" aria-hidden="true"></i></button>
-        <button class="button button4" onclick="s()"><i class="fa fa-book" aria-hidden="true"></i> 1 Household Chore (Laundry, Dishes etc)</button>
+        <h3> Ten Minute Activities</h3>
+        <button class="button button4" onclick="threePtBtn()"><i class="fa fa-language" aria-hidden="true"></i> Duolingo Lessons</button>
+        <button class="button button4" onclick="threePtBtn()"><i class="fa fa-paw" aria-hidden="true"></i> Playing with Pet</button>
+        <button class="button button4" onclick="threePtBtn()"><i class="fa fa-bicycle" aria-hidden="true"></i> Exercise</button>
+        <button class="button button4" onclick="threePtBtn()"><i class="fa fa-paint-brush" aria-hidden="true"></i> Non-digital Hobby </button>
+        <button class="button button4" onclick="threePtBtn()"><i class="fa fa-book" aria-hidden="true"></i> Reading</button>
+        <button class="button button4" onclick="threePtBtn()"><i class="fa fa-hourglass-o" aria-hidden="true"></i> Mindfulness or Meditation</button>
+        <button class="button button4" onclick="threePtBtn()"><i class="fa fa-home" aria-hidden="true"></i> Household Chore</button>
       </div>
 
 
       <div class="column">
-        <h3>TEST</h3>
-        <button class="button button4" onclick="tenMinuteEx()"><i class="fa fa-bicycle" aria-hidden="true"></i>
-          10 Minutes of Exercise</button>
-        <button class="button button4" onclick="fifteenMinuteEx()"><i class="fa fa-bicycle" aria-hidden="true"></i>15 Minutes of Exercise</button>
-        <button class="button button4" onclick="twentyMinuteEx()"><i class="fa fa-bicycle" aria-hidden="true"></i> 20 Minutes of Exercise</button>
-        <button class="button button4" onclick="thirtyMinuteEx()"><i class="fa fa-bicycle" aria-hidden="true"></i> 30 Minutes of Exercise</button>
-        <button class="button button4" onclick="s()">1 Duolingo Lesson <i class="fa fa-language" aria-hidden="true"></i>
-        </button>
-        <button class="button button4" onclick="s()">3 Duolingo Lessons <i class="fa fa-language" aria-hidden="true"></i>
-        </button>
+        <h3> Fifthteen Minute Activities</h3>
+        <button class="button button4" onclick="fourPtBtn()"><i class="fa fa-language" aria-hidden="true"></i> Duolingo Lessons</button>
+        <button class="button button4" onclick="fourPtBtn()"><i class="fa fa-paw" aria-hidden="true"></i> Playing with Pet</button>
+        <button class="button button4" onclick="fourPtBtn()"><i class="fa fa-bicycle" aria-hidden="true"></i> Exercise</button>
+        <button class="button button4" onclick="fourPtBtn()"><i class="fa fa-paint-brush" aria-hidden="true"></i> Non-digital Hobby </button>
+        <button class="button button4" onclick="fourPtBtn()"><i class="fa fa-book" aria-hidden="true"></i> Reading</button>
+        <button class="button button4" onclick="fourPtBtn()"><i class="fa fa-hourglass-o" aria-hidden="true"></i> Mindfulness or Meditation</button>
+        <button class="button button4" onclick="fourPtBtn()"><i class="fa fa-home" aria-hidden="true"></i> Household Chore</button>
+      </div>
+
+
+      <div class="column">
+        <h3>Twenty Minute Activities</h3>
+        <button class="button button4" onclick="fivePtBtn()"><i class="fa fa-language" aria-hidden="true"></i> Duolingo Lessons</button>
+        <button class="button button4" onclick="fivePtBtn()"><i class="fa fa-paw" aria-hidden="true"></i> Playing with Pet</button>
+        <button class="button button4" onclick="fivePtBtn()"><i class="fa fa-bicycle" aria-hidden="true"></i> Exercise</button>
+        <button class="button button4" onclick="fivePtBtn()"><i class="fa fa-paint-brush" aria-hidden="true"></i> Non-digital Hobby </button>
+        <button class="button button4" onclick="fivePtBtn()"><i class="fa fa-book" aria-hidden="true"></i> Reading</button>
+        <button class="button button4" onclick="fivePtBtn()"><i class="fa fa-hourglass-o" aria-hidden="true"></i> Mindfulness or Meditation</button>
+        <button class="button button4" onclick="fivePtBtn()"><i class="fa fa-home" aria-hidden="true"></i> Household Chore</button>
       </div>
     </div>
 
@@ -173,8 +168,8 @@ if userInput == tenExercise:
       <h6>Heading 6</h6>
       <p> Paragraph 1</p>
       <p> Paragraph 1</p>
-      <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-      <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+      <button type="button" class="btn btn-primary btn-lg btn-block">Block level button - will use for D3 graph</button>
+      <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button  - will use for D3 graph</button>
     </div>
 
     <!-- Footer -->

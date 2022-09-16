@@ -46,10 +46,12 @@ dic['taxiID2345E'] = {"q1":"3","q2" : "3","q3" : "1","q4" : "3","q5" : "n"}
 
 # taxi class
 class Taxi :
+
+    # class init
     def __init__(self, num = "", cleanRating = 0, serviceRating = 0, commRating = 0, drivingRating = 0 ):
         # num
-        if num == None: 
-            raise Exception ("\t*** A Vaild ISBN is necessary ***")
+        if num == None or if len(newnum) != len(11):
+            raise Exception ("\t*** A Vaild Taxi Number is necessary ***")
         self.__num = num
 
         # q1 cleanliness 
@@ -75,3 +77,11 @@ class Taxi :
             self.__rating = drivingRating
         else:
             raise Exception("*** Invaid Rating!*** Rating must be from 1-5")
+
+# class functions
+    def addTaxi(self):
+        newnum = (input("\t Please provide a Taxi ID Number: "))
+        if len(newnum) != len(11):
+            print("\tPlease Enter an eleven character")
+            return
+        newnum = int(newnum)

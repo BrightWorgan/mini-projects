@@ -1,3 +1,6 @@
+#Imports
+import re
+
 # dictionary to temp store data
 dic = {
     "taxiID1234D": {
@@ -50,7 +53,7 @@ class Taxi :
     # class init
     def __init__(self, num = "", cleanRating = 0, serviceRating = 0, commRating = 0, drivingRating = 0 ):
         # num
-        if num == None or if len(newnum) != len(11):
+        if num == None or len(num) != len(11):
             raise Exception ("\t*** A Vaild Taxi Number is necessary ***")
         self.__num = num
 
@@ -83,5 +86,12 @@ class Taxi :
         newnum = (input("\t Please provide a Taxi ID Number: "))
         if len(newnum) != len(11):
             print("\tPlease Enter an eleven character")
+            # regex to check if the num is in the correct format
+            # must start with a "IE" + 7digits + 2 alpha characters
+            # if 
+            # starts with ^ie (checking againsit lower case as the userinput is lowered at intake)
+            # set of characters [0-99]
+            # ends with $[a-zA-Z]
+
             return
         newnum = int(newnum)

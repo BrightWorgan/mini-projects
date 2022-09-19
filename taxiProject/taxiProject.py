@@ -1,4 +1,6 @@
-#Imports
+# Imports
+
+# Reg-ex import
 import re
 
 # dictionary to temp store data
@@ -81,6 +83,9 @@ class Taxi :
         else:
             raise Exception("*** Invaid Rating!*** Rating must be from 1-5")
 
+        # q5 yes/no question
+        # 
+
 # class functions
     def addTaxi(self):
         newnum = (input("\t Please provide a Taxi ID Number: "))
@@ -91,7 +96,7 @@ class Taxi :
             # if 
             # starts with ^ie (checking againsit lower case as the userinput is lowered at intake)
             # set of characters [0-99]
-            # ends with $[a-zA-Z]
-
+            # ends with $[a-z]
+            check = re.search("^ie[0-99]$[a-z]", newnum)
             return
         newnum = int(newnum)

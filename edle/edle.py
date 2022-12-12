@@ -18,11 +18,16 @@
 # current word
 
 
+# list of words to be removed
+RemovalWords = []
 
+# play = "n"
+# get user input
+play = input("\tHello there. Do you wish to play a game? \n\t Y/N?").lower()
 # while loop
 while play != "y":
 # get user input
-    play = input("\tHello there. Do you wish to play a game? \n\t Y/N?").lower()
+    # play = input("\tHello there. Do you wish to play a game? \n\t Y/N?").lower()
     # check user's answer
     if play == "y":
         print("\tFantastic! The let's get started")
@@ -34,5 +39,12 @@ while play != "y":
 # get user's paragraph
 paragraph = input("\tPlease enter the paragraph you wish to Edle today! ")
 
+# list of word
+booklet = list.spilt(paragraph)
+print(booklet)
+# remove "and" words
+for word in len(booklet):
+    if word  in RemovalWords:
+        booklet.remove(word)
 
 

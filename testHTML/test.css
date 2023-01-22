@@ -1,32 +1,185 @@
- /* Container needed to position the button. Adjust the width as needed */
- 
- .container {
-   position: relative;
-   width: 50%;
- }
- /* Make the image responsive */
- 
- .container img {
-   width: 100%;
-   height: auto;
- }
- /* Style the button and place it in the middle of the container/image */
- 
- .container .btn {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
-   background-color: #555;
-   color: white;
-   font-size: 16px;
-   padding: 12px 24px;
-   border: none;
-   cursor: pointer;
-   border-radius: 5px;
- }
- 
- .container .btn:hover {
-   background-color: black;
- }
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+image {
+  width: 100%;
+  padding: 20px;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+
+/* Header/Blog Title */
+
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+
+
+/* Left column */
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+
+/* Right column */
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+
+/* Fake image */
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+/* Add a card effect for articles */
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Footer */
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(62, 53, 94);
+  margin-top: 20px;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+
+/* Style the collapsible content. Note: hidden by default */
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+
+/* Style the header: fixed position (always stay at the top) */
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #7378d3;
+}
+
+
+/* The progress container (grey background) */
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+
+/* The progress bar (scroll indicator) */
+
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
